@@ -16,3 +16,6 @@ Scraper to scrape and create line plot of INR vs USD rates. Runs every 10 minute
 	- Visualization
 		python xe_com.py -t viz
 
+## Crontab
+
+	*/10 * * * * cd <PATH>; python xe_com.py -t crawl >> /tmp/backup2.log 2>&1
